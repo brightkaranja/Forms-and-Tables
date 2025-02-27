@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #heading{
+            text-align:left;
+        }
+        .signin_form label{
+            float: left;
+        }
+        .signin_form{
+            border: solid 1px;
+            width: 40%;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+        }
+        .signin_form p{
+            text-align: left;
+        }
+        .signin_form input{
+            padding: 16px 15px;
+            width: 94%;
+            border-radius: 5px;
+            border: solid 1px;
+            margin: 10px o;
+
+        }
+        .signin_form button{
+            padding: 14px 12px;
+            margin: 5px 0;
+            width: 100%;
+            background: none;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        .hr-lines{
+            position: relative;
+            max-width: 500px;
+            margin: 70px auto;
+            text-align: center;
+        }
+        .hr-lines:before{
+            content: "";
+            height: 2px;
+            width: 130px;
+            background: black;
+            display: block;
+            position: absolute;
+            top: 30%;
+            left: 0;
+        }
+        .hr-lines:after{
+            content:"";
+            height: 2px;
+            width: 130px;
+            background: black;
+            display: block;
+            position: absolute;
+            top: 30%;
+            right: 0;
+        }
+        #google{
+            width: 16%;
+            height: 25%;
+        }
+        #facebook{
+            width: 16%;
+            height: 25%;
+        }
+        #checkbox{
+            width: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <form class="signin_form" action="tables.html">
+        <p for="don't have an account?">Don't have an account?<a href="index.html" style="color: black;"><b>Sign Up</b> </a></p>
+        <br>
+        <h1 id="heading">Sign In</h1>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input id="email"placeholder="Enter Email" type="email">
+        <br>
+        <label for="password">Password:</label>
+        <br>
+        <input id="password"placeholder="Enter Password" type="password">
+        <br>
+        <label><input type="checkbox" id="checkbox"> I've Read And Agree With <b> Terms Of Services</b> And Our <b>Private Policy</b></label> 
+        <br>
+        <br>
+        <button type="sign_in" id="submit_button">Sign In</button>
+        <br>
+        <h2 class="hr-lines">or sign in with</h2>
+        <i class="fa-brands fa-google" id="google"></i>
+        <i class="fa-brands fa-facebook" id="facebook"></i>
+    
+
+    </form>
+    
+</body> 
+</html>
